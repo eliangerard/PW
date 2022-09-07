@@ -14,8 +14,12 @@
                 <input type="radio" name="sexo" value="femenino" required>Femenino<br>
                 <label>E-mail </label><input type="email" name="email" placeholder="example@hotmail.com"><br>
                 <label>Teléfono </label><input type="tel" name="telefono" placeholder="6141248021"><br>
-                <label>Imagen </label><input type="file" name="imagen"><br>
-                <label>Comentarios <br></label><textarea name="comentarios" rows="5" cols="50" placeholder="..."></textarea>
+                <label>Imagen </label><input type="file" name="imagen" accept="image/*"><br>
+                <label>Comentarios <br></label><textarea name="comentarios" rows="5" cols="50" placeholder="..."></textarea><br>
+                <label>Acepto los términos y condiciones </label><input type="checkbox" name="terminos" required><br>
+                <button type="submit"><img src="src/check.png" width="16px" height="16px"> Enviar</button>
+                <button type="reset"><img src="src/reset.png" width="16px" height="16px"> Reiniciar</button>
+                
             </form>
         </font>
     </body>
