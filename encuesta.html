@@ -2,10 +2,10 @@
     <head>
         <title>Encuesta</title>
     </head>
-    <body style="background-color: #1e2022; margin: 1rem 0;">
+    <body style="background-color: #1e2022; margin: 2rem 2rem;">
         <font face="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif" color="white">
             <form method="get">
-                <h4>Datos del usuario</h4>
+                <h4>DATOS DEL USUARIO</h4>
                 <label>Nombre(s) </label><input type="text" name="nombres" maxlength="35" placeholder="Elian Ramiro" required>
                 <label>Apellido(s) </label><input type="text" name="apellidos" maxlength="35" placeholder="Gerard Ramos" required><br>
                 <label>Fecha de nacimiento </label><input type="date" name="fechaNacimiento" required>
@@ -15,15 +15,27 @@
                 <label>E-mail </label><input type="email" name="email" placeholder="example@hotmail.com">
                 <label>Teléfono </label><input type="tel" name="telefono" placeholder="6141248021"><br>
                 <hr>
+                <h4>ENCUESTA DE SATISFACCIÓN</h4>
+                <label>¿Desde hace cuánto utiliza nuestros productos o servicios?</label><br>
+                <input type="radio" name="tiempoUso" value="1" required>Menos de 1 año<br>
+                <input type="radio" name="tiempoUso" value="3" required>Entre 1 y 3 años<br>
+                <input type="radio" name="tiempoUso" value="4" required>Más de 4 años<br>
+                <label>¿Cuál es la frecuencia con que realiza compras en nuestro sitio web?</label><br>
+                <input type="radio" name="frecuencia" value="1" required>Diario<br>
+                <input type="radio" name="frecuencia" value="2" required>Semanal<br>
+                <input type="radio" name="frecuencia" value="3" required>Mensual<br>
+                <input type="radio" name="frecuencia" value="4" required>Anual<br>
                 <label>¿Pudiste resolver tu problema? </label><br>
                 <input type="radio" name="problemaResuelto" value="masculino" required>Si 
                 <input type="radio" name="problemaResuelto" value="femenino" required>No<br>
                 <label>¿Qué tan probable es que nos recomiendes con un amigo? </label><br>Nada <input type="range" name="tiempoEspera"> Mucho <br>
                 <label>¿Qué tan satisfecho estás con el tiempo de espera? </label><br>Muy insatisfecho <input type="range" name="tiempoEspera"> Muy satisfecho <br>
                 <label>¿Qué mejorarías de nuestro servicio? <br></label><textarea style="margin: 0.3rem;" name="comentarios" rows="5" cols="50" placeholder="..."></textarea><br>
-                <label>¿Podemos comunicarnos para dar seguimiento a tus respuestas? </label><input type="checkbox" name="seguimiento"><br>
+                <label>¿Cómo fue el trato del operador? <br></label><textarea style="margin: 0.3rem;" name="comentarios" rows="5" cols="50" placeholder="..."></textarea><br>
+                <label>¿Algún comentario o sugerencia? <br></label><textarea style="margin: 0.3rem;" name="comentarios" rows="5" cols="50" placeholder="..."></textarea><br>
+                <label>¿Podemos comunicarnos para dar seguimiento a tus respuestas? </label><input type="checkbox" name="seguimiento"><br><br>
 
-                <label>Acepto los términos y condiciones </label><input type="checkbox" name="terminos" required><br>
+                <label><strong>Acepto los términos y condiciones </strong></label><input type="checkbox" name="terminos" required><br><br>
                 <button type="submit"><img src="src/check.png" width="16px" height="16px"> Enviar</button>
                 <button type="reset"><img src="src/reset.png" width="16px" height="16px"> Reiniciar</button>
                 
