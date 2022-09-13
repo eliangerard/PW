@@ -1,0 +1,38 @@
+a {
+    font-size: 15px;
+    color: #FF5555; 
+    font-weight: bold; 
+    margin: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:link{
+    background-color: #353535;
+}
+a:visited{
+    background-color: #1e2022;
+}
+a:hover, a:active {
+    background-color: #ce5f5f3c;
+}
+a.mail {
+    background-color: #ffda55;
+}
+caption {
+    font-size: 25px;
+    color:#ffda55;
+}
+img {
+    border: 5px groove #FF5555;
+}
+table, td, tr {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:#FF5555;
+}
+#textos:hover {
+    color: #FF5555;
+    font-weight: bolder;
+}
